@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/tweety_db
+    username: postgres
+    password: 7272
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+application:
+  bucket:
+    name: tweety-storage
+
+jwt-variables:
+  KEY: Tweety
+  EXPIRES_ACCESS_TOKEN_MINUTE: 200000
+  ISSUER: Nad1r
+
